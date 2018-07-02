@@ -4,8 +4,11 @@
   "description": "a collection of stoic quotes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "browser-sync start --directory --server --files '*.js, *.html, *.css' "
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.5"
+  }
 }
