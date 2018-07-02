@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+@-ms-viewport{
+  width: device-width;
+}
+
+@media (max-width: 800px) {
+ .quote-box {
+    grid-area: 1 / 1 / 2 / 4;
+ }
+
+ .share-buttons {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: center;
+ }
+
+ .waves-effect {
+    margin-bottom: 15px;
+ }
+}
+
+@media (min-width: 801px) {
+  .quote-box {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+ .share-buttons {
+    grid-area: 3 / 2 / 4 / 3;
+    justify-self: center;
+  }
+}
+
+body {
+  background-color: #FFF2E5;
+}
+
+.wrapper { 
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+}
+
+.quote-box { 
+  margin: 50px;
+  padding: 25px;
+  border: 15px double #FFDFBF;
+  font-family: 'Rock Salt', cursive;
+  /* 16 * 0.0625 = 1px */
+  letter-spacing: 0.0625em * 5;
+}
+
+.waves-effect {
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#new-quote {
+  margin-right: 100px;
+}
+
+.boom-box {
+  background-color: #fdf9f3;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
+}
